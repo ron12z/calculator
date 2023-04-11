@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	text-align: center;
+}
+
+main {
+	flex: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: lightblue;
+}
+
+.calculator-body {
+	background: lime;
+	min-width: 400px;
+	height: 26rem;
+}
+
+.display {
+	height: 30%;
+	padding: 1rem;
+	background: lemonchiffon;
+}
+
+/* Button containers */
+.keys {
+	background: lightcoral;
+	display: flex;
+	height: 70%;
+}
+
+.keys-numbers {
+	flex: 3;
+	outline: 1px solid blue;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.keys-operations {
+	flex: 1;
+	outline: 1px solid blue;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.key {
+	height: 40px;
+	width: 30px;
+	border: none;
+	border-radius: 0.2rem;
+}
