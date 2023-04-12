@@ -12,28 +12,31 @@
 		<header><h2 class="header-title">My Online Calculator</h2></header>
 		<main>
 			<div class="calculator-body">
-				<div class="display"><p class="display-content">1235.11</p></div>
+				<div class="screen">
+					<div class="screen-content">
+						<div class="entered"><p>99 +</p></div>
+						<div class="current"><p>189</p></div>
+					</div>
+				</div>
 				<div class="keys">
-					<div class="keys-numbers">
-						<button class="key">1</button>
-						<button class="key">2</button>
-						<button class="key">3</button>
-						<button class="key">4</button>
-						<button class="key">5</button>
-						<button class="key">6</button>
-						<button class="key">7</button>
-						<button class="key">8</button>
-						<button class="key">9</button>
-						<button class="key">.</button>
-						<button class="key">0</button>
-						<button class="key">=</button>
-					</div>
-					<div class="keys-operations">
-						<button class="key">+</button>
-						<button class="key">-</button>
-						<button class="key">×</button>
-						<button class="key">÷</button>
-					</div>
+					<button class="key long" id="clearBtn">CLEAR</button>
+					<button class="key long" id="deleteBtn">DELETE</button>
+					<button class="key" data-number=>7</button>
+					<button class="key" data-number=>8</button>
+					<button class="key" data-number>9</button>
+					<button class="key" data-operator>÷</button>
+					<button class="key" data-number>4</button>
+					<button class="key" data-number>5</button>
+					<button class="key" data-number>6</button>
+					<button class="key" data-operator>x</button>
+					<button class="key" data-number>1</button>
+					<button class="key" data-number>2</button>
+					<button class="key" data-number>3</button>
+					<button class="key" data-operator>-</button>
+					<button class="key" id='pointBtn'>.</button>
+					<button class="key" data-number>0</button>
+					<button class="key" id="equalsBtn">=</button>
+					<button class="key" data-operator>+</button>
 				</div>
 			</div>
 		</main>

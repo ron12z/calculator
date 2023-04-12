@@ -23,3 +23,11 @@ const operate = function (a, operator, b) {
 			return divide(+a, +b);
 	}
 };
+
+// Variables
+const currentInput = document.querySelector(".current");
+const enteredInput = document.querySelector(".entered");
+const clearBtn = document.querySelector("#clearBtn");
+const deleteBtn = document.querySelector("#deleteBtn");
+const numbers = document.querySelectorAll("[data-number]");
+const operators = document.querySelectorAll("[data-operator]");
