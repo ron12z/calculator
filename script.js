@@ -12,6 +12,7 @@ const divide = function (a, b) {
 	return b == 0 || a == 0 ? `LMAO` : a / b;
 };
 const operate = function (a, operator, b) {
+	if (a == 143 && b == 0) return "I love you";
 	switch (operator) {
 		case "+":
 			return add(+a, +b);
