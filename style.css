@@ -101,6 +101,14 @@ main {
 	padding: 0.3rem;
 }
 
+.key:hover {
+	background: var(--dark-bg);
+}
+
+.key:active {
+	transform: scale(93%);
+}
+
 .long {
 	grid-column: span 2;
 }
