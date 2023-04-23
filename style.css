@@ -8,8 +8,23 @@
 
 :root {
 	--main-bg: #8dc4f3;
+	--site-bg: rgb(149, 176, 184);
+	--dark-bg: rgb(109, 128, 134);
 }
 
+header,
+footer {
+	background: var(--dark-bg);
+	color: rgb(220, 237, 253);
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	height: 2rem;
+}
 body {
 	display: flex;
 	height: 100vh;
@@ -22,13 +37,13 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgb(181, 205, 212);
+	background: var(--site-bg);
 }
 
 .calculator-body {
 	background: var(--main-bg);
-	min-width: 18rem;
-	height: 28rem;
+	min-width: 13rem;
+	height: 20rem;
 	display: flex;
 	flex-direction: column;
 	padding: 0.6rem;
@@ -83,6 +98,7 @@ main {
 	border-radius: 0.4rem;
 	font-weight: 540;
 	font-size: 1.5rem;
+	padding: 0.3rem;
 }
 
 .long {
